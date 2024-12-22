@@ -1,0 +1,34 @@
+{
+    "comments": {
+        // symbol used for single line comment. Remove this entry if your language does not support line comments
+        "lineComment": "--",
+        // symbols used for start and end a block comment. Remove this entry if your language does not support block comments
+        "blockComment": [ "--[[", "]]--" ]
+    },
+    // symbols used as brackets
+    "brackets": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"]
+    ],
+    // symbols that are auto closed when typing
+    "autoClosingPairs": [
+        ["{", "}"],
+		["[", "]"],
+		["(", ")"],
+		{ "open": "\"", "close": "\"", "notIn": ["string"] },
+		{ "open": "'", "close": "'", "notIn": ["string"] }
+    ],
+    // symbols that can be used to surround a selection
+    "surroundingPairs": [
+        ["{", "}"],
+        ["[", "]"],
+        ["(", ")"],
+        ["\"", "\""],
+        ["'", "'"]
+    ],
+    "indentationRules": {
+        "increaseIndentPattern": "((^\\s*\\b(((local|let)?[\\s\\w=]+)?function|repeat|else|elseif|if|while)\\b|^.*\\b(do|then)\\b|^.*([\\(\\,\\=\\[\\{\\+\\-\\*\\/\\^\\%\\&\\|\\:]|and|or|\\/\\/|\\.\\.|\\&gt;\\&gt;|\\&lt;\\&lt;)\\s*(\\(\\)|\\([A-Za-z_][A-Za-z0-9_]*[=,\\)]))((?!\\bend\\b).)*$|^.*\\{((?!\\}).)*$)",
+        "decreaseIndentPattern": "(^\\s*\\b(elsei|elseif|else|end|until)\\b.*$|^((?!\\{).)*\\}\\;?.*$)"
+    }
+}

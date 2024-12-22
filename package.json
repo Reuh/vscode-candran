@@ -1,0 +1,35 @@
+{
+  "name": "candran",
+  "displayName": "candran",
+  "description": "Add language support for Candran",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.96.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "candran",
+        "aliases": [
+          "Candran",
+          "candran"
+        ],
+        "extensions": [
+          "can",
+          "candran"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "candran",
+        "scopeName": "source.candran",
+        "path": "./syntaxes/candran.tmLanguage.json"
+      }
+    ]
+  }
+}
